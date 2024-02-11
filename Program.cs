@@ -25,4 +25,22 @@
 
 // Задача 3: Задайте произвольную строку. Выясните, является ли она палиндромом.
 
+// bool IsPalindrome(string str)
+// {
+//     string strToLower = str.ToLower();
+//     for (int i = 0, j = strToLower.Length - 1; i < strToLower.Length; i++, j--)
+//     {
+//         if (strToLower[i] != strToLower[j])
+//         {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// string str = Console.ReadLine();
+// Console.WriteLine(IsPalindrome(str) ? "Yes" : "No"); // это тернарный операто: Условие ? значение если истина : значение если лож сокращение от IF
+
+
+
 // Задача 4*(не обязательная): Задайте строку, состоящую из слов, разделенных пробелами. Сформировать строку, в которой слова расположены в обратном порядке. В полученной строке слова должны быть также разделены пробелами.
