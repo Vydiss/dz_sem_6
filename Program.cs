@@ -27,10 +27,10 @@
 
 // bool IsPalindrome(string str)
 // {
-//     string strToLower = str.ToLower();
-//     for (int i = 0, j = strToLower.Length - 1; i < strToLower.Length; i++, j--)
+//     string strLower = str.ToLower(); // перевод строки в нижний регистр
+//     for (int i = 0, j = strLower.Length - 1; i < strLower.Length; i++, j--)
 //     {
-//         if (strToLower[i] != strToLower[j])
+//         if (strLower[i] != strLower[j])
 //         {
 //             return false;
 //         }
@@ -44,3 +44,16 @@
 
 
 // Задача 4*(не обязательная): Задайте строку, состоящую из слов, разделенных пробелами. Сформировать строку, в которой слова расположены в обратном порядке. В полученной строке слова должны быть также разделены пробелами.
+
+// string ReverseWords(string str)
+// {
+//     string[] words = str.Split(' ');
+//     Array.Reverse(words);
+//     return string.Join(" ", words);
+// }
+
+// // Пример использования
+// string input = "Hello my world!";
+// string reversedWords = ReverseWords(input);
+// Console.WriteLine($"Исходная строка: {input}");
+// Console.WriteLine($"Реверсированные слова: {reversedWords}");
